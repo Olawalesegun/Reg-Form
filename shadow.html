@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="shadow.css">
+</head>
+<body>
+    <div id="shadow">
+        <form> 
+            <br>
+            <h3 id="reg"> </h3>
+            <label for="mailConfirm"> Email:</label>
+            <input type="text" id="mailConfirm" onblur="mailConfirmation()">
+            <p id="mailError"> </p>
+            
+            <label for="input2">Password:</label>
+            <input type="password" id="pwd1Confirm" onblur="passwordConfirmation()">
+            <p id="passwordError"></p>
+            
+            <label for="pwd2Confirm">Confirm Password:</label>
+            <input type="password" id="pwd2Confirm" onblur="passConfirmation2()">
+            <p id="confirmPasswordError"></p>
+        </form>
+    </div>
+    <script src="shadow.js"></script>
+</body>
+</html>
